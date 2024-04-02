@@ -27,7 +27,7 @@ public class StringArrayManipulator {
     public String findLongestString() {
         String longestString = stringArray[0];
         for (int i = 1; i < stringArray.length; i++) {
-            if(stringArray[i].compareTo(longestString) > 0) {
+            if (stringArray[i].compareTo(longestString) > 0) {
                 longestString = stringArray[i];
             }
         }
