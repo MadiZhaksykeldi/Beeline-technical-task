@@ -8,5 +8,9 @@ public class StringManipulationApp {
         System.out.print("Printing array: ");
         stringArrayManipulator.printArray();
         System.out.println("Longest string in array: " + stringArrayManipulator.findLongestString());
+        stringArrayManipulator.reverseStrings();
+        stringArrayManipulator.addString("banana");
+        System.out.print("Printing array: ");
+        stringArrayManipulator.printArray();
     }
 }
