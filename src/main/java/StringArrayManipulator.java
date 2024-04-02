@@ -24,13 +24,13 @@ public class StringArrayManipulator {
         stringArray = copyOfStringArray;
     }
 
-    public int findLongestString() {
-        int maxLength = 0;
-        for (String str : stringArray) {
-            if (str.length() > maxLength) {
-                maxLength = str.length();
+    public String findLongestString() {
+        String longestString = stringArray[0];
+        for (int i = 1; i < stringArray.length; i++) {
+            if(stringArray[i].compareTo(longestString) > 0) {
+                longestString = stringArray[i];
             }
         }
-        return maxLength;
+        return longestString;
     }
 }
