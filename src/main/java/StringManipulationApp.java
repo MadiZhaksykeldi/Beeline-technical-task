@@ -5,6 +5,7 @@ public class StringManipulationApp {
         stringArrayManipulator.addString("orange");
         stringArrayManipulator.addString("apple");
         stringArrayManipulator.addString("pineapple");
-
+        System.out.print("Printing array: ");
+        stringArrayManipulator.printArray();
     }
 }
