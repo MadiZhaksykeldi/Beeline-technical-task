@@ -11,6 +11,12 @@ public class StringArrayManipulator {
         System.out.println(Arrays.toString(stringArray));
     }
 
+    public void reverseStrings() {
+        for (int i = 0; i < stringArray.length; i++) {
+            stringArray[i] = new StringBuilder(stringArray[i]).reverse().toString();
+        }
+    }
+
     public int findLongestString() {
         int maxLength = 0;
         for (String str : stringArray) {
