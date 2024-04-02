@@ -17,6 +17,13 @@ public class StringArrayManipulator {
         }
     }
 
+    public void addString(String newString) {
+        String[] copyOfStringArray = new String[stringArray.length + 1];
+        System.arraycopy(stringArray, 0, copyOfStringArray, 0, stringArray.length);
+        copyOfStringArray[copyOfStringArray.length - 1] = newString;
+        stringArray = copyOfStringArray;
+    }
+
     public int findLongestString() {
         int maxLength = 0;
         for (String str : stringArray) {
