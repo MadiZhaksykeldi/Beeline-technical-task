@@ -33,4 +33,14 @@ public class StringArrayManipulator {
         }
         return longestString;
     }
+
+    public String findShortestString() {
+        String shortestString = stringArray[0];
+        for (int i = 0; i < stringArray.length; i++) {
+            if(stringArray[i].length() < shortestString.length()) {
+                shortestString = stringArray[i];
+            }
+        }
+        return shortestString;
+    }
 }
